@@ -30,3 +30,24 @@ EOF
 ```
 
 `sudo update-initramfs -u`
+
+### networking
+
+highest priority available network is used
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+	ssid="network-one"
+	psk="secret-one"
+	priority=3
+}
+network={
+	ssid="network-two"
+	psk="secret-two"
+	priority=4
+}
+```
