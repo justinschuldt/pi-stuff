@@ -51,3 +51,12 @@ network={
 	priority=4
 }
 ```
+
+### mount nfs volume on boot
+
+add to `/etc/fstab`:
+```
+192.168.86.29:/volume1/video /home/pi/videos nfs rw,auto,hard,intr 0 0
+
+```
+note: ensure the `sudo raspi-config` Boot Option (3): Wait for Network at Boot (B2) is enabled
