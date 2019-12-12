@@ -18,6 +18,10 @@
 ### for passwordless ssh access,  copy ssh key to device:
 `ssh-copy-id <USERNAME>@<IP-ADDRESS>`
 
+or
+
+` cat ~/.ssh/id_rsa.pub | ssh pi@192.168.86.227 "cat >> ~/.ssh/authorized_keys"`
+
 ### for LED matrix pHats
 to disable sound:
 
