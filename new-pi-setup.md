@@ -1,6 +1,9 @@
 ### update packages
-* `sudo apt-get update -y`
-* `sudo apt-get upgrade -y`
+* `sudo apt update -y`
+* `sudo apt upgrade -y`
+
+#### update firmware (Pi 4)
+`sudo apt full-upgrade -y`
 
 ### software settings
 `sudo raspi-config`
@@ -13,7 +16,7 @@
 * unpack storage
 
 ### general software to install
-`sudo apt-get install -y git`
+`sudo apt install -y git`
 
 ### for passwordless ssh access,  copy ssh key to device:
 `ssh-copy-id <USERNAME>@<IP-ADDRESS>`
